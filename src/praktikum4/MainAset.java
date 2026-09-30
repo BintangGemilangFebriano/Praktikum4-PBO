@@ -8,10 +8,8 @@ public class MainAset {
 
     public static void main(String[] args) {
 
-        // Membuat objek ManajemenAset
         ManajemenAset manajemen = new ManajemenAset();
 
-        // Menambahkan 4 data aset IT
         manajemen.tambahAset(
             new AsetIT("A001", "Server", "Ruang Server", "Baik")
         );
@@ -28,15 +26,12 @@ public class MainAset {
             new AsetIT("A004", "PC", "Laboratorium", "Baik")
         );
 
-        // Menampilkan semua aset
         System.out.println("DATA AWAL ASET IT");
         manajemen.tampilkanSemuaAset();
 
-        // Menghapus aset
         System.out.println("\nPROSES PENGHAPUSAN");
         manajemen.hapusAset("A003");
 
-        // Menampilkan kembali semua aset
         System.out.println("\nDATA SETELAH PENGHAPUSAN");
         manajemen.tampilkanSemuaAset();
     }

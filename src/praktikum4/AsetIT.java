@@ -10,7 +10,6 @@ public class AsetIT {
     String lokasi;
     String statusKondisi;
 
-    // Parameterized constructor
     public AsetIT(String idAset, String namaPerangkat, String lokasi, String statusKondisi) {
         this.idAset = idAset;
         this.namaPerangkat = namaPerangkat;
@@ -18,7 +17,6 @@ public class AsetIT {
         this.statusKondisi = statusKondisi;
     }
 
-    // Method untuk menampilkan informasi aset
     public void tampilkanInfoAset() {
         System.out.println("ID Aset       : " + idAset);
         System.out.println("Nama Perangkat: " + namaPerangkat);

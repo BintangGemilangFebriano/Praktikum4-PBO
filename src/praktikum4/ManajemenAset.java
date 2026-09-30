@@ -9,15 +9,12 @@ import java.util.Iterator;
 
 public class ManajemenAset {
 
-    // ArrayList untuk menyimpan objek AsetIT
     ArrayList<AsetIT> daftarAset = new ArrayList<>();
 
-    // Menambahkan aset
     public void tambahAset(AsetIT asetBaru) {
         daftarAset.add(asetBaru);
     }
 
-    // Menampilkan semua aset menggunakan for-each
     public void tampilkanSemuaAset() {
         System.out.println("=== DAFTAR SELURUH ASET IT ===");
 
@@ -26,7 +23,6 @@ public class ManajemenAset {
         }
     }
 
-    // Menghapus aset menggunakan Iterator
     public void hapusAset(String idAset) {
         Iterator<AsetIT> iterator = daftarAset.iterator();
         boolean ditemukan = false;
